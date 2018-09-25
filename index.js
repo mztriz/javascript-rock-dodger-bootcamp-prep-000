@@ -95,7 +95,7 @@ function moveDodger(e) {
 function moveDodgerLeft() {
   window.requestAnimationFrame(function() {
     if (LEFT > 0) {
-      DODGER.style.left = `${LEFT - 4}px`;
+      DODGER.style.left = `${LEFT - 10}px`;
     }
   })
 }
@@ -103,7 +103,7 @@ function moveDodgerLeft() {
 function moveDodgerRight() {
  window.requestAnimationFrame(function() {
     if (LEFT < 360) {
-      DODGER.style.left = `${LEFT + 4}px`;
+      DODGER.style.left = `${LEFT + 10}px`;
     }
   })
 }
