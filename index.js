@@ -78,7 +78,7 @@ function endGame() {
 function moveDodger(e) {
   
   // I don't know what this does
-  if ([LEFT_ARROW, RIGHT_ARROW].indexOf(code) > -1) {
+  if ([LEFT_ARROW, RIGHT_ARROW].indexOf(e.which) > -1) {
     e.preventDefault()
     e.stopPropagation()
   }
