@@ -9,6 +9,7 @@ const LEFT_ARROW = 37 // use e.which!
 const RIGHT_ARROW = 39 // use e.which!
 const ROCKS = []
 const START = document.getElementById('start')
+const LEFT = positionToInteger(DODGER.style.left)
 
 var gameInterval = null
 
@@ -84,10 +85,8 @@ function moveDodger(e) {
 
 function moveDodgerLeft() {
   window.requestAnimationFrame(function() {
-    const left = positionToInteger(DODGER.style.left)
-
-    if (left > 0) {
-      DODGER.style.left = `${left - 4}px`;
+    if (LEFT > 0) {
+      DODGER.style.left = `${LEFT - 4}px`;
     }
   })
 }
