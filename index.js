@@ -85,7 +85,7 @@ function moveDodger(e) {
     e.preventDefault()
     e.stopPropagation()
   }
-  // Seriously, what?
+  // Seriously, what is this?? I just saw it was testing for it
   
   
   if (e.which === LEFT_ARROW) {
