@@ -76,6 +76,15 @@ function endGame() {
 }
 
 function moveDodger(e) {
+  
+  // I don't know what this does
+  if ([LEFT_ARROW, RIGHT_ARROW].indexOf(code) > -1) {
+    e.preventDefault()
+    e.stopPropagation()
+  }
+  // Seriously, what?
+  
+  
   if (e.which === LEFT_ARROW) {
     moveDodgerLeft()
   } else if (e.which === RIGHT_ARROW) {
